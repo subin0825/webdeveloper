@@ -5,7 +5,7 @@ img{ border: none;}
 
 /*공통클래스*/
 .container{ width: 1000px; margin: 0 auto; }
-.gray {background: #ccc;} /*테스트용, 융통성있게*/
+.gray {background: #BECDFF;} /*테스트용, 융통성있게*/
 /*float를 자식으로 가지고 있는 부모에 적용하는 클래스 clear*/
 .clear:after{ content: ""; display: block; clear: both; }
 /* 스타일양을 줄여주게 하는 역할 ! 공통 클래스 */
