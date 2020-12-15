@@ -1,0 +1,37 @@
+*{ margin: 0; padding: 0;}
+ul, dl, ol{ list-style: none;}
+a{ color:#222; text-decoration: none;}
+img{ border: none;}
+
+/*공통클래스*/
+.container{ width: 1000px; margin: 0 auto; }
+.gray {background: #ccc;} /*테스트용, 융통성있게*/
+/*float를 자식으로 가지고 있는 부모에 적용하는 클래스 clear*/
+.clear:after{ content: ""; display: block; clear: both; }
+/* 스타일양을 줄여주게 하는 역할 ! 공통 클래스 */
+
+/*상단*/
+#hd{ position: relative; z-index: 1000;}
+
+/*로고*/
+#hd h1{ float: left; }
+/*엄청중요 상단 링크*/
+#hd a {display: block;}
+/* 네이버이션 */
+#gnb { float: right; }
+/* 대메뉴 */
+#gnb>li{ display: inline-block;
+         position:relative;
+         padding: 0 15px;
+         background: red;
+       }
+
+#gnb .d1{line-height: 46px; /*로고의 이미지 높이와 동일하게*/
+         font:1.2em;}
+
+/* 소메뉴 */
+#gnb .d2 {
+          position: absolute; left: -10px; top: 100%; font-size: 0.95em;
+          width: 150px; background: white; padding: 10px;
+          display: none; }
+#gnb >li:hover .d2{display: block;}
